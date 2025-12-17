@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7km0feolbxlr"]
+
+[ext_resource type="Script" uid="uid://cj3h6pxk1skwq" path="res://Scenes/wipmenu.gd" id="1_dx1oj"]
+
+[node name="Menu WIP" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dx1oj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -83.0
+offset_right = 83.0
+offset_bottom = 77.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 96
+text = "Winds At Sea"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartTwo" type="Button" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 155.0
+offset_right = 876.0
+offset_bottom = 261.0
+text = "Play 2 Players"
+
+[node name="StartThree" type="Button" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 271.0
+offset_right = 876.0
+offset_bottom = 377.0
+text = "Play 3 Players"
+
+[node name="StartFour" type="Button" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 387.0
+offset_right = 876.0
+offset_bottom = 493.0
+text = "Play 4 Players"
+
+[connection signal="pressed" from="StartTwo" to="." method="startTwoPlayer"]
+[connection signal="pressed" from="StartThree" to="." method="startThreePlayer"]
+[connection signal="pressed" from="StartFour" to="." method="startFourPlayer"]
