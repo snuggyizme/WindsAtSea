@@ -9,7 +9,12 @@ func _process(delta):
 	
 	if playerToAxis(playerNumber):
 		rotation_degrees += movement["turning"] * delta
-		
+	
+	velocity += movement["acceleration"] * Vector2.RIGHT.rotated(rotation)
+	
+	velocity = velocity.clampf(0, movement["topSpeed"])
+	
+	move_and_slide()
 
 func playerToAxis(pNo):
 	return Input.get_axis("player" + pNo + "left", "player" + pNo + "right")

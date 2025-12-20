@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b7km0feolbxlr"]
 
-[ext_resource type="Script" uid="uid://cj3h6pxk1skwq" path="res://Scenes/wipmenu.gd" id="1_dx1oj"]
+[ext_resource type="Script" uid="uid://cj3h6pxk1skwq" path="res://Scripts/wipmenu.gd" id="1_dx1oj"]
 
 [node name="Menu WIP" type="Control"]
 layout_mode = 3

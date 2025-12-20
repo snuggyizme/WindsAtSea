@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cuctehftra5o4"]
 
-[ext_resource type="Script" uid="uid://c6air2pra5uc4" path="res://Scenes/playercontroller.gd" id="1_badgh"]
+[ext_resource type="Script" uid="uid://c6air2pra5uc4" path="res://Scripts/playercontroller.gd" id="1_badgh"]
 [ext_resource type="Texture2D" uid="uid://bandua755ctme" path="res://Assets/Boats/player1.png" id="1_g7r5y"]
 [ext_resource type="Texture2D" uid="uid://blp4alkd3lsa4" path="res://Assets/Boats/sail.png" id="2_badgh"]
-[ext_resource type="Script" uid="uid://d2m5costu1t40" path="res://Scenes/rotateSail.gd" id="4_tcwdh"]
+[ext_resource type="Script" uid="uid://d2m5costu1t40" path="res://Scripts/rotateSail.gd" id="4_tcwdh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tcwdh"]
 size = Vector2(114, 80)
