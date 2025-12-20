@@ -16,7 +16,7 @@ config/icon="res://Assets/Temporary/icon.svg"
 
 [autoload]
 
-World="*res://Scripts/world.gd"
+Aeolus="*res://Scripts/world.gd"
 GlobalTools="*res://Scripts/tools.gd"
 
 [input]

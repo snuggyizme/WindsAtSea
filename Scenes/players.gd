@@ -2,7 +2,8 @@ extends Node
 
 var boat = preload("res://Scenes/boat.tscn")
 
-func _enter_tree():
+func _ready():
+	print("hobgoblin oysters")
 	for i in range(GlobalTools.playerCount):
 		var node = Node.new()
 		node.name = str(i + 1)

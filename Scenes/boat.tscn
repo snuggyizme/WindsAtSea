@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cuctehftra5o4"]
+[gd_scene load_steps=6 format=3 uid="uid://cuctehftra5o4"]
 
 [ext_resource type="Script" uid="uid://c6air2pra5uc4" path="res://Scenes/playercontroller.gd" id="1_badgh"]
 [ext_resource type="Texture2D" uid="uid://bandua755ctme" path="res://Assets/Boats/player1.png" id="1_g7r5y"]
 [ext_resource type="Texture2D" uid="uid://blp4alkd3lsa4" path="res://Assets/Boats/sail.png" id="2_badgh"]
+[ext_resource type="Script" uid="uid://d2m5costu1t40" path="res://Scenes/rotateSail.gd" id="4_tcwdh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tcwdh"]
 size = Vector2(114, 80)
@@ -10,8 +11,6 @@ size = Vector2(114, 80)
 [node name="Boat" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_badgh")
-speed = 3.0
-turning = 3.0
 
 [node name="BoatSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_g7r5y")
@@ -21,3 +20,4 @@ shape = SubResource("RectangleShape2D_tcwdh")
 
 [node name="SailSprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_badgh")
+script = ExtResource("4_tcwdh")
